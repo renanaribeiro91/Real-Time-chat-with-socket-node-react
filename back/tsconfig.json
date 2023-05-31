@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "api/modules",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "api/modules/@types"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["api/modules/controllers/*"],
+      "@models/*": ["api/modules/models/*"],
+      "@views/*": ["api/modules/views/*"],
+      "@config/*": ["api/modules/config/*"]
+    }
+  },
+  "include": [
+    "api/modules/**/*"
+, "api/modules/users/routes"  ]
+}
